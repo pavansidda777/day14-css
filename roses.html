@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            width: 4%;
+            height: 6.8vh;
+            background: #000;
+            margin: 1%;
+            border-radius: 50%;
+           
+        }
+        .balls{
+            display:flex;
+            margin-top: 10%;
+            margin-left: 10%;
+            height: 28vh;
+            align-items: end;
+        }
+        #man1{
+            animation-name: bounce;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            animation-direction: alternate-reverse;
+            animation-delay: 0.1s;
+        }
+        #man2{
+            animation-name: bounce;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+            animation-direction: alternate-reverse;
+        }
+        #man3{
+            animation-name: bounce;
+            animation-duration: 0.9s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-delay: 0.8s;
+            animation-direction: alternate-reverse;
+        }
+
+        .ball1{
+            width: 1%;
+            height: 2vh;
+            background: green;
+            border-radius: 50%;
+           
+        }
+        .small{
+            display: flex;
+            margin: 1%;
+            gap: 0.5%;
+            margin-left: 15%;
+
+        }
+        #side1{
+            animation-name: swipe;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.1s;
+            animation-direction: alternate-reverse;
+        }
+        #side2{
+            animation-name: swipe;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.4s;
+            animation-direction: alternate-reverse;
+        }
+        #side3{
+            animation-name: swipe;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.7s;
+            animation-direction: alternate-reverse;
+        }
+        
+
+        @keyframes bounce{
+            from{
+                transform: translateY(0px);
+                transform-origin: bottom;
+            }
+            to{
+                transform: translateY(-150px);
+                transform-origin: bottom;
+            }
+        }
+        @keyframes swipe{
+            from{
+                opacity: 0.6;
+                transform: scale();
+            }
+            to{
+                opacity: 2;
+                transform: scale(1.5);
+            }
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+            .balls {
+                margin-top: 5%;
+                margin-left: 5%;
+                height: 18vh;
+            }
+
+            .ball {
+                width: 8%;
+                height: 12vh;
+            }
+
+            .small {
+                margin-left: 5%;
+            }
+
+            .ball1 {
+                width: 3%;
+                height: 4vh;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .balls {
+                margin-top: 8%;
+                margin-left: 8%;
+                height: 24vh;
+            }
+
+            .ball {
+                width: 6%;
+                height: 9vh;
+            }
+
+            .small {
+                margin-left: 10%;
+            }
+
+            .ball1 {
+                width: 2%;
+                height: 3vh;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+            .balls {
+                margin-top: 10%;
+                margin-left: 10%;
+                height: 28vh;
+            }
+
+            .ball {
+                width: 4%;
+                height: 6.8vh;
+            }
+
+            .small {
+                margin-left: 15%;
+            }
+
+            .ball1 {
+                width: 1%;
+                height: 2vh;
+            }
+        }
+    </style>
+</head>
+<body>
+         <div class="balls">
+                  <div class="ball" id="man1"></div>
+                  <div class="ball" id="man2"></div>
+                  <div class="ball" id="man3"></div>
+         </div>
+            <div class="small">
+                     <div class="ball1" id="side1"></div>
+                     <div class="ball1" id="side2"></div>
+                     <div class="ball1" id="side3"></div>
+            </div>
+</body>
+</html>

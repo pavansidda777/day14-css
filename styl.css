@@ -1,0 +1,85 @@
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(imge2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .box {
+        width: 80%;  
+        height: auto; 
+        margin: 10%;
+        padding: 5%;
+    }
+    
+    .rotate {
+        width: 70%; 
+        height: 30vh; 
+        margin-left: 15%; 
+        margin-bottom: 20%; 
+    }
+    
+    .music {
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 4%;
+        margin-bottom: 3%;
+    }
+    
+    .audio {
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .box {
+        width: 60%; 
+        margin: 10%;
+        padding: 4%;
+    }
+    
+    .rotate {
+        width: 60%;
+        height: 25vh;
+        margin-left: 20%;
+        margin-bottom: 25%;
+    }
+
+    .music {
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 3%;
+        margin-bottom: 3%;
+    }
+    
+    .audio {
+        text-align: center;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        width: 20%; 
+        height: 65vh;
+        margin: 5%;
+        padding: 2%;
+    }
+    
+    .rotate {
+        width: 50%;
+        height: 20vh;
+        margin-left: 20%;
+        margin-bottom: 40%;
+    }
+
+    .music {
+        grid-template-columns: repeat(10, 1fr);
+        gap: 2%;
+        margin-bottom: 1%;
+    }
+    
+    .audio {
+        text-align: center;
+        margin-top: 5%;
+    }
+}

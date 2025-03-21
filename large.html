@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: url(imge2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .box{
+            width: 20%;
+            height: 65vh;
+            box-shadow: 0px 0px 15px;
+            margin: 5%;
+            padding: 2%;
+            background-image: url(imge3.jpg);
+        }
+        .rotate{
+            width: 50%;
+            height: 20vh;
+            border-radius: 100% 100% 100% 100%;
+            margin: 5%;
+            margin-left: 20%;
+            margin-bottom: 40%;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-duration: 80s;
+        }
+        .rotate img{
+            width: 100%;
+            height: 100%;
+            border-radius: 100% 100% 100% 100%;
+        }
+        .music{
+            display:flex;
+           height: 20vh;
+            gap: 2%;
+            align-items: end;
+            margin-bottom: 1%;
+
+        }
+        #maxi{
+            width: 100%;
+            height: 2vh;
+            margin: 1%;
+            background: #f12727;
+            box-shadow: 0px 0px 2px;
+            border-radius: 4px 4px 0px 0px;
+           
+        }
+        .lines1{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        .lines2{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+        .lines3{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        .lines4{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .lines5{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        .lines6{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+        .lines7{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        .lines8{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .lines9{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+        .lines10{
+            animation-name: height;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes height{
+            0%{
+                transform: translateY(0px);
+                transform-origin:bottom;
+            }
+            100%{
+                transform: translateY();
+                height: 20vh;
+                transform-origin:bottom;
+            }
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(3600deg);
+            }
+        }
+
+
+
+
+        @media screen and (max-width: 768px) {
+    body {
+        background-image: url(imge2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .box {
+        width: 80%;  
+        height: auto; 
+        margin: 10%;
+        padding: 5%;
+    }
+    
+    .rotate {
+        width: 70%; 
+        height: 30vh; 
+        margin-left: 15%; 
+        margin-bottom: 20%; 
+    }
+    
+    .music {
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 4%;
+        margin-bottom: 3%;
+    }
+    
+    .audio {
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .box {
+        width: 60%; 
+        margin: 10%;
+        padding: 4%;
+    }
+    
+    .rotate {
+        width: 60%;
+        height: 25vh;
+        margin-left: 20%;
+        margin-bottom: 25%;
+    }
+
+    .music {
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 3%;
+        margin-bottom: 3%;
+    }
+    
+    .audio {
+        text-align: center;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        width: 20%; 
+        height: 65vh;
+        margin: 5%;
+        padding: 2%;
+    }
+    
+    .rotate {
+        width: 50%;
+        height: 20vh;
+        margin-left: 20%;
+        margin-bottom: 40%;
+    }
+
+    .music {
+        grid-template-columns: repeat(10, 1fr);
+        gap: 2%;
+        margin-bottom: 1%;
+    }
+    
+    .audio {
+        text-align: center;
+        margin-top: 5%;
+    }
+}
+        
+    </style>
+</head>
+<body>
+       <div class="section">
+               
+                   <div class="box">
+                             <div class="rotate">
+                                <img src="pic.jpg" alt="">
+
+                             </div>
+                             <div class="music">
+                                      <div class="lines1" id="maxi"></div>
+                                      <div class="lines2" id="maxi"></div>
+                                      <div class="lines3" id="maxi"></div>
+                                      <div class="lines4" id="maxi"></div>
+                                      <div class="lines5" id="maxi"></div>
+                                      <div class="lines6" id="maxi"></div>
+                                      <div class="lines7" id="maxi"></div>
+                                      <div class="lines8" id="maxi"></div>
+                                      <div class="lines9" id="maxi"></div>
+                                      <div class="lines10" id="maxi"></div>
+                             </div>
+
+                             <div class="audio">
+                                <audio controls autoplay>
+                                    <source src="Godari Gattu.mp3">
+                                 </audio>
+                             </div>
+                   </div>
+       </div>
+</body>
+</html>
